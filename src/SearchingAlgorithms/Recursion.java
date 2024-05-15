@@ -1,4 +1,4 @@
-package demo;
+package SearchingAlgorithms;
 
 public class Recursion {
     static int fact=1;
