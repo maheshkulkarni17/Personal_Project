@@ -1,4 +1,4 @@
-package SearchingAlgorithms;
+package SortingAlgorithms;
 
 public class Recursion {
     static int fact=1;

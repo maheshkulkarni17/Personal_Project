@@ -1,4 +1,4 @@
-package SearchingAlgorithms;
+package SortingAlgorithms;
 
 public class InsertionSort {
     static int arr[] = {8,5,7,3,2};

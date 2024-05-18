@@ -1,4 +1,4 @@
-package SearchingAlgorithms;
+package SortingAlgorithms;
 
 public class QuickSort {
 

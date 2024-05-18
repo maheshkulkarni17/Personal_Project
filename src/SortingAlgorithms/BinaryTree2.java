@@ -1,4 +1,4 @@
-package SearchingAlgorithms;
+package SortingAlgorithms;
 
 import java.util.LinkedList;
 import java.util.Queue;
