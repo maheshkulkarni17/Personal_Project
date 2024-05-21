@@ -2,6 +2,7 @@ package GraphAlgorithms;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 public class DepthFirstSearch {
 
@@ -34,8 +35,31 @@ public class DepthFirstSearch {
         graph.addEdge(1, 4);
         graph.addEdge(2, 4);
 
-        dfs(0,graph.adjList);
+//        dfs(0,graph.adjList);
+        dfsStack(0,graph.adjList);
     }
+
+    private static void dfsStack(int startNode, LinkedList<Integer>[] adjList) {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(startNode);
+
+        while(!stack.isEmpty())
+        {
+            startNode = stack.pop();
+            if(!visited[startNode]) {
+                visited[startNode] = true;
+                System.out.println("Visited stack " + startNode);
+            }
+            for(int nei:adjList[startNode])
+            {
+                if(!visited[nei])
+                    stack.push(nei);
+            }
+
+
+        }
+    }
+
     static boolean visited [] = new boolean[5+1];
 
     private static void dfs(int startNode,LinkedList<Integer> [] adjList) {
