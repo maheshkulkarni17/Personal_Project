@@ -8,6 +8,8 @@ public class LinearSearch {
         int key = 5;
         int key1 = 12;
 
+
+
         LinearSearchMethod(arr,arr.length,key);
         LinearSearchMethod(arr,arr.length,key);
         LinearSearchMethod(arr,arr.length,key);

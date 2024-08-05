@@ -114,10 +114,10 @@ public class BinaryTree2 {
         id++;
         if(nodes[id]==-1)
             return null;
-        Node newnode = new Node(nodes[id]);
-        newnode.left = buildTree(nodes);
-        newnode.right = buildTree(nodes);
+        Node TreeNode = new Node(nodes[id]);
+        TreeNode.left = buildTree(nodes);
+        TreeNode.right = buildTree(nodes);
 
-        return newnode;
+        return TreeNode;
     }
 }
